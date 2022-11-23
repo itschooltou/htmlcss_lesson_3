@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вложенные таблицы</title>
+    <style>
+        table {
+            column-span: 0;
+            border-collapse: collapse;
+        }
+        tr, td, th {
+            border: 1px solid gray;
+            padding: 8px 16px;
+        }
+        table table {
+            background-color: rgb(226, 226, 226);
+        }
+        table table table {
+            background-color: rgb(167, 167, 167);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Ячейка 1</td>
+            <td>Ячейка 2</td>
+            <td>Ячейка 3</td>
+        </tr>
+        <tr>
+            <td>Ячейка 4</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>Ячейка A</td>
+                        <td>Ячейка B</td>
+                        <td>Ячейка C</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка D</td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>Ячейка !</td>
+                                    <td>Ячейка &</td>
+                                </tr>
+                                <tr>
+                                    <td>Ячейка ?</td>
+                                    <td>Ячейка *</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>Ячейка F</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Ячейка 6</td>
+        </tr>
+        <tr>
+            <td>Ячейка 7</td>
+            <td>Ячейка 8</td>
+            <td>Ячейка 9</td>
+        </tr>
+    </table>
+</body>
+</html>
